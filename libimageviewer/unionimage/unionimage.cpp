@@ -105,6 +105,9 @@ public:
                   << "PNG"
                   << "PGM"
                   << "PPM"
+                  << "SVG"
+                  << "TIF"
+                  << "TIFF"
                   << "XPM"
                   << "ICO"
                   << "ICNS";
@@ -115,6 +118,8 @@ public:
                    << "PNG"
                    << "PGM"
                    << "PPM"
+                   << "TIF"
+                   << "TIFF"
                    << "XPM"
                    << "ICO"
                    << "ICNS";

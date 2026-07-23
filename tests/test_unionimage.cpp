@@ -75,6 +75,12 @@ TEST_F(gtestview, image_rotateNormal45)
     EXPECT_EQ(false, bRet);
 }
 
+TEST_F(gtestview, image_rotatableTiffAndSvg)
+{
+    EXPECT_TRUE(ImageEngine::instance()->isRotatable(m_TIFPath));
+    EXPECT_TRUE(ImageEngine::instance()->isRotatable(m_SVGPath));
+}
+
 TEST_F(gtestview, image_thumbnailExist)
 {
     bool bRet = Libutils::image::thumbnailExist(QApplication::applicationDirPath() + "/test/jpg170.jpg");
