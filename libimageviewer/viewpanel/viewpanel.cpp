@@ -2201,7 +2201,7 @@ void LibViewPanel::showEvent(QShowEvent *e)
     }
     //显示的时候需要判断一次滑动
     noAnimationBottomMove();
-//    resetBottomToolbarGeometry(m_stack->currentWidget() == m_view);
+    resetBottomToolbarGeometry(m_stack->currentWidget() == m_view);
     QFrame::showEvent(e);
 }
 
